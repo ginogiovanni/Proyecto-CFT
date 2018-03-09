@@ -1,0 +1,138 @@
+CREATE DATABASE teste;
+use teste;
+
+CREATE TABLE personal(
+	rut_personal VARCHAR(20) PRIMARY KEY,
+	nombre_personal VARCHAR(80),
+	apellidos_personal VARCHAR(80),
+	sexo VARCHAR(10),
+	direccion_personal VARCHAR(70),
+	telefono_personal VARCHAR(20),
+	email_personal VARCHAR(100)
+);
+
+CREATE TABLE usuario(
+	id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+	nombre_usuario VARCHAR(50),
+	password VARCHAR(25),
+	tipo_usuario VARCHAR(50)
+);
+
+CREATE TABLE usuariosPersonal(
+	id_usuariosPersonal INT AUTO_INCREMENT PRIMARY KEY,
+	rut_personal_fk VARCHAR(20),
+	id_usuario_fk INT,
+	FOREIGN KEY (rut_personal_fk) REFERENCES personal(rut_personal),
+	FOREIGN KEY (id_usuario_fk) REFERENCES usuario(id_usuario)
+);
+
+CREATE TABLE alumno(
+	rut_alumno VARCHAR(20) PRIMARY KEY,
+	nombre_alumno VARCHAR(80),
+	apellidos_alumno VARCHAR(80),
+	sexo VARCHAR(10),
+	direccion_alumno VARCHAR(70),
+	telefono_alumno VARCHAR(20),
+	email_alumno VARCHAR(100)
+);
+
+CREATE TABLE usuariosAlumno(
+	id_usuariosAlumno INT AUTO_INCREMENT PRIMARY KEY,
+	rut_alumno_fk VARCHAR(20),
+	id_usuario_fk INT,
+	FOREIGN KEY (rut_alumno_fk) REFERENCES alumno(rut_alumno),
+	FOREIGN KEY (id_usuario_fk) REFERENCES usuario(id_usuario)
+);
+
+CREATE TABLE carrera(
+	id_carrera INT AUTO_INCREMENT PRIMARY KEY,
+	desc_carrera VARCHAR(100)
+);
+
+CREATE TABLE institucion(
+	id_institucion INT AUTO_INCREMENT PRIMARY KEY,
+	desc_institucion VARCHAR(50)
+);
+
+CREATE TABLE ciclo(
+	cod_ciclo VARCHAR(20) PRIMARY KEY,
+	desc_ciclo VARCHAR(50),
+	anio_ciclo INT,
+	id_carrera_fk INT,
+	FOREIGN KEY (id_carrera_fk) REFERENCES carrera(id_carrera)
+);
+
+CREATE TABLE matricula(
+	id_matricula INT AUTO_INCREMENT PRIMARY KEY,
+	rut_alumno_fk VARCHAR(20),
+	id_institucion_fk INT,
+	id_carrera_fk INT,
+	cod_ciclo_fk VARCHAR(20),
+	semestre VARCHAR(40),
+	monto FLOAT,
+	fecha_matricula DATETIME,	
+	modalidad VARCHAR(15),	
+	FOREIGN KEY (rut_alumno_fk) REFERENCES alumno(rut_alumno),
+	FOREIGN KEY (id_institucion_fk) REFERENCES institucion(id_institucion),
+	FOREIGN KEY (id_carrera_fk) REFERENCES carrera(id_carrera),
+	FOREIGN KEY (cod_ciclo_fk) REFERENCES ciclo(cod_ciclo)
+);
+
+CREATE TABLE asignatura(
+	id_asignatura INT AUTO_INCREMENT PRIMARY KEY,
+	desc_asignatura VARCHAR(90)
+);
+
+
+CREATE TABLE docente(
+	rut_docente VARCHAR(20) PRIMARY KEY,
+	nombre_docente VARCHAR(80),
+	apellido_docente VARCHAR(80),
+	sexo VARCHAR(10),
+	direccion_docente VARCHAR(70),
+	telefono_docente VARCHAR(20),
+	email_docente VARCHAR(100),
+	titulo_docente VARCHAR(60)
+);
+
+CREATE TABLE mantAsignatura(
+	id_mantAsignatura INT AUTO_INCREMENT PRIMARY KEY,
+	id_asignatura_fk INT,
+	rut_docente_fk VARCHAR(20),
+	rut_alumno_fk VARCHAR(20),
+	cod_ciclo_fk VARCHAR(20),
+	FOREIGN KEY (id_asignatura_fk) REFERENCES asignatura(id_asignatura),
+	FOREIGN KEY (rut_docente_fk) REFERENCES docente(rut_docente),
+	FOREIGN KEY (rut_alumno_fk) REFERENCES alumno(rut_alumno),
+	FOREIGN KEY (cod_ciclo_fk) REFERENCES ciclo(cod_ciclo)
+);
+
+CREATE TABLE usuariosDocente(
+	id_usuariosDocente INT AUTO_INCREMENT PRIMARY KEY,
+	id_usuario_fk INT,
+	rut_docente_fk VARCHAR(20),
+	FOREIGN KEY (id_usuario_fk) REFERENCES usuario(id_usuario),
+	FOREIGN KEY (rut_docente_fk) REFERENCES docente(rut_docente)
+);
+
+
+CREATE TABLE contrato(
+	id_contrato INT AUTO_INCREMENT PRIMARY KEY,
+	rut_docente_fk VARCHAR(20),
+	fecha_contrato DATETIME,
+	duracion_contrato INT,
+	salud VARCHAR(20),
+	sueldo_bruto FLOAT,
+	FOREIGN KEY (rut_docente_fk) REFERENCES docente(rut_docente)
+);
+
+CREATE TABLE detalle_pago(
+	id_pago INT AUTO_INCREMENT PRIMARY KEY,
+	fecha_pago DATETIME,
+	id_contrato_fk INT,
+	sueldo_liquido FLOAT,
+	FOREIGN KEY (id_contrato_fk) REFERENCES contrato(id_contrato)
+);
+
+
+

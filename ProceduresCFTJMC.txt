@@ -1,0 +1,606 @@
+DELIMITER //
+CREATE PROCEDURE selectPersonal()
+BEGIN
+	SELECT * FROM personal;
+END
+//DELIMITER;
+
+
+DELIMITER //
+CREATE PROCEDURE crearPersonal(
+	in  _rut_personal VARCHAR(20),
+		_nombre_personal VARCHAR(80),
+		_apellidos_personal VARCHAR(80),
+		_sexo VARCHAR(10),
+		_direccion_personal VARCHAR(70),
+		_telefono_personal VARCHAR(20),
+		_email_personal VARCHAR(100)
+)
+BEGIN
+	INSERT INTO personal(rut_personal, nombre_personal, apellidos_personal, sexo, direccion_personal, telefono_personal, email_personal)
+	VALUES (_rut_personal,_nombre_personal, _apellidos_personal, _sexo, _direccion_personal, _telefono_personal, _email_personal);
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE eliminarPersonal(
+	IN _rut_personal VARCHAR(20)
+)
+BEGIN
+	DELETE FROM personal WHERE rut_personal = _rut_personal;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE modificarPersonal(
+	IN _rut_personal VARCHAR(20),
+		_nombre_personal VARCHAR(80),
+		_apellidos_personal VARCHAR(80),
+		_sexo VARCHAR(10),
+		_direccion_personal VARCHAR(70),
+		_telefono_personal VARCHAR(20),
+		_email_personal VARCHAR(100)
+)
+BEGIN
+	UPDATE personal SET rut_personal = _rut_personal, nombre_personal = _nombre_personal, apellidos_personal = _apellidos_personal,
+	sexo = _sexo, direccion_personal = _direccion_personal, telefono_personal = _telefono_personal, email_personal = _email_personal
+	WHERE rut_personal = _rut_personal;
+END
+// DELIMITER
+
+
+DELIMITER //
+CREATE PROCEDURE selectAlumno()
+BEGIN
+	SELECT * FROM alumno;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE selectAlumno()
+BEGIN
+	SELECT rut_alumno, rut_alumno FROM alumno;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE modificarAlumno(
+	IN _rut_alumno VARCHAR(20),
+		_nombre_alumno VARCHAR(80),
+		_apellidos_alumno VARCHAR(80),
+		_sexo VARCHAR(10),
+		_direccion_alumno VARCHAR(70),
+		_telefono_alumno VARCHAR(20),
+		_email_alumno VARCHAR(100)
+)
+BEGIN
+	UPDATE alumno SET rut_alumno = _rut_alumno, nombre_alumno = _nombre_alumno, apellidos_alumno = _apellidos_alumno,
+	sexo = _sexo, direccion_alumno = _direccion_alumno, telefono_alumno = _telefono_alumno, email_alumno = _email_alumno
+	WHERE rut_alumno = _rut_alumno;
+END
+// DELIMITER
+
+
+DELIMITER //
+CREATE PROCEDURE selectMatriculaAlumno()
+BEGIN
+	SELECT m.id_matricula, a.rut_alumno, m.semestre, m.modalidad, m.monto, m.fecha_matricula, c.desc_carrera, i.desc_institucion, ci.desc_ciclo
+	FROM matricula m, alumno a, carrera c, institucion i, ciclo ci
+	WHERE a.rut_alumno = m.rut_alumno_fk
+	AND m.id_institucion_fk = i.id_institucion
+	AND c.id_carrera = m.id_carrera_fk
+	AND ci.cod_ciclo = m.cod_ciclo_fk;
+END
+//DELIMITER;
+
+
+DELIMITER //
+CREATE PROCEDURE crearMatriculaAlumno(
+	in  _rut_alumno VARCHAR(20),
+		_nombre_alumno VARCHAR(80),
+		_apellidos_alumno VARCHAR(80),
+		_sexo VARCHAR(10),
+		_direccion_alumno VARCHAR(70),
+		_telefono_alumno VARCHAR(20),
+		_email_alumno VARCHAR(100),
+		_id_carrera_fk INT,
+		_id_institucion_fk INT,
+		_semestre VARCHAR(40),
+		_modalidad VARCHAR(15),
+		_monto FLOAT,
+		_fecha_matricula DATETIME,
+		_cod_ciclo_fk VARCHAR(20)
+
+)
+BEGIN
+	INSERT INTO alumno(rut_alumno, nombre_alumno, apellidos_alumno, sexo, direccion_alumno, telefono_alumno, email_alumno)
+	VALUES (_rut_alumno,_nombre_alumno, _apellidos_alumno, _sexo, _direccion_alumno, _telefono_alumno, _email_alumno);
+
+	INSERT INTO matricula(rut_alumno_fk, id_carrera_fk, id_institucion_fk,semestre, modalidad, monto, fecha_matricula, cod_ciclo_fk)
+	VALUES(_rut_alumno, _id_carrera_fk, _id_institucion_fk, _semestre, _modalidad, _monto, _fecha_matricula, _cod_ciclo_fk);
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE modificarMatricula(
+	IN _id_matricula INT,
+		_semestre VARCHAR(40),
+		_monto FLOAT
+)
+BEGIN
+	UPDATE matricula SET semestre = _semestre, monto = _monto
+	WHERE id_matricula = _id_matricula;
+END
+// DELIMITER
+
+DELIMITER //
+CREATE PROCEDURE selectCarrera()
+BEGIN
+	SELECT * FROM carrera;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE crearCarrera(
+	in  _desc_carrera VARCHAR(100)
+)
+BEGIN
+	INSERT INTO carrera(desc_carrera)
+	VALUES (_desc_carrera);
+END
+//DELIMITER;
+
+
+DELIMITER //
+CREATE PROCEDURE modificarCarrera(
+	IN _id_carrera INT,
+		_desc_carrera VARCHAR(100)
+)
+BEGIN
+	UPDATE carrera SET desc_carrera = _desc_carrera
+	WHERE id_carrera = _id_carrera;
+END
+// DELIMITER
+
+DELIMITER //
+CREATE PROCEDURE eliminarCarrera(
+	IN _id_carrera INT
+)
+BEGIN
+	DELETE FROM carrera WHERE id_carrera = _id_carrera;
+END
+//DELIMITER;
+
+
+DELIMITER //
+CREATE PROCEDURE selectInstitucion()
+BEGIN
+	SELECT * FROM institucion;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE crearInstitucion(
+	in  _desc_institucion VARCHAR(50)
+)
+BEGIN
+	INSERT INTO institucion(desc_institucion)
+	VALUES (_desc_institucion);
+END
+//DELIMITER;
+
+
+DELIMITER //
+CREATE PROCEDURE modificarInstitucion(
+	IN _id_institucion INT,
+		_desc_institucion VARCHAR(50)
+)
+BEGIN
+	UPDATE institucion SET desc_institucion = _desc_institucion
+	WHERE id_institucion = _id_institucion;
+END
+// DELIMITER
+
+DELIMITER //
+CREATE PROCEDURE eliminarInstitucion(
+	IN _id_institucion INT
+)
+BEGIN
+	DELETE FROM institucion WHERE id_institucion = _id_institucion;
+END
+//DELIMITER;
+
+
+DELIMITER //
+CREATE PROCEDURE selectCiclo()
+BEGIN
+	SELECT * FROM ciclo;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE selectCicloCarrera(
+in _id_carrera_fk INT
+)
+BEGIN
+	SELECT cod_ciclo, desc_ciclo FROM ciclo WHERE id_carrera_fk = _id_carrera_fk;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE crearCiclo(
+	in  _cod_ciclo VARCHAR(10),
+		_desc_ciclo VARCHAR(50),
+		_anio INT,
+		_id_carrera_fk INT
+)
+BEGIN
+	INSERT INTO ciclo(cod_ciclo, desc_ciclo, anio_ciclo, id_carrera_fk)
+	VALUES (_cod_ciclo, _desc_ciclo, _anio, _id_carrera_fk);
+END
+//DELIMITER;
+
+
+DELIMITER //
+CREATE PROCEDURE modificarCiclo(
+	IN _cod_ciclo VARCHAR(10),
+		_desc_ciclo VARCHAR(50),
+		_anio INT
+)
+BEGIN
+	UPDATE ciclo SET desc_ciclo = _desc_ciclo, anio_ciclo = _anio
+	WHERE cod_ciclo = _cod_ciclo;
+END
+// DELIMITER
+
+
+DELIMITER //
+CREATE PROCEDURE selectAsignatura()
+BEGIN
+	SELECT * FROM asignatura;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE crearAsignatura(
+	in  _desc_asignatura VARCHAR(90)
+)
+BEGIN
+	INSERT INTO asignatura(desc_asignatura)
+	VALUES (_desc_asignatura);
+END
+//DELIMITER;
+
+
+DELIMITER //
+CREATE PROCEDURE modificarAsignatura(
+	IN _id_asignatura INT,
+		_desc_asignatura VARCHAR(90)
+)
+BEGIN
+	UPDATE asignatura SET desc_asignatura = _desc_asignatura
+	WHERE id_asignatura = _id_asignatura;
+END
+// DELIMITER
+
+
+DELIMITER //
+CREATE PROCEDURE selectDocente()
+BEGIN
+	SELECT * FROM docente;
+END
+//DELIMITER;
+
+
+
+DELIMITER //
+CREATE PROCEDURE modificarDocente(
+	IN _rut_docente VARCHAR(20),
+		_nombre_docente VARCHAR(80),
+		_apellido_docente VARCHAR(80),
+		_sexo VARCHAR(10),
+		_direccion_docente VARCHAR(70),
+		_telefono_docente VARCHAR(20),
+		_email_docente VARCHAR(100),
+		_titulo_docente VARCHAR(60)
+)
+BEGIN
+	UPDATE docente SET rut_docente = _rut_docente, nombre_docente = _nombre_docente, apellido_docente = _apellido_docente,
+	sexo = _sexo, direccion_docente = _direccion_docente, telefono_docente = _telefono_docente, email_docente = _email_docente,
+	titulo_docente = _titulo_docente
+	WHERE rut_docente = _rut_docente;
+END
+// DELIMITER
+
+
+DELIMITER //
+CREATE PROCEDURE selectContrato()
+BEGIN
+	SELECT * FROM contrato;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE crearContrato(
+	in  _rut_docente VARCHAR(20),
+		_nombre_docente VARCHAR(80),
+		_apellido_docente VARCHAR(80),
+		_sexo VARCHAR(10),
+		_direccion_docente VARCHAR(70),
+		_telefono_docente VARCHAR(20),
+		_email_docente VARCHAR(100),
+		_titulo_docente VARCHAR(60),
+		_fecha_contrato DATETIME,
+		_duracion_contrato INT,
+		_salud VARCHAR(20),
+		_sueldo_bruto FLOAT
+
+)
+BEGIN
+	INSERT INTO docente(rut_docente, nombre_docente, apellido_docente, sexo, direccion_docente, telefono_docente, email_docente, titulo_docente)
+	VALUES (_rut_docente,_nombre_docente, _apellido_docente, _sexo, _direccion_docente, _telefono_docente, _email_docente, _titulo_docente);
+
+	INSERT INTO contrato(rut_docente_fk, fecha_contrato, duracion_contrato, salud, sueldo_bruto)
+	VALUES(_rut_docente, _fecha_contrato, _duracion_contrato, _salud, _sueldo_bruto);
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE modificarContrato(
+	IN _rut_docente VARCHAR(20),
+		_duracion_contrato INT,
+		_salud VARCHAR(20),
+		_sueldo_bruto FLOAT
+)
+BEGIN
+	UPDATE contrato SET duracion_contrato = _duracion_contrato, salud = _salud, sueldo_bruto = _sueldo_bruto
+	WHERE rut_docente_fk = _rut_docente;
+END
+// DELIMITER
+
+DELIMITER //
+CREATE PROCEDURE selectMantAsignatura()
+BEGIN
+	SELECT m.id_mantAsignatura, a.desc_asignatura, d.rut_docente, c.desc_ciclo, al.rut_alumno  
+	FROM alumno al, asignatura a, ciclo c, docente d, mantasignatura m
+	WHERE al.rut_alumno = m.rut_alumno_fk
+	AND a.id_asignatura = m.id_asignatura_fk
+	AND c.cod_ciclo = m.cod_ciclo_fk
+	AND d.rut_docente = m.rut_docente_fk;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE crearMantAsignatura(
+	in  _id_asignatura_fk INT,
+		_rut_docente_fk VARCHAR(20),
+		_rut_alumno_fk VARCHAR(20),		
+		_cod_ciclo_fk VARCHAR(10)
+)
+BEGIN
+	INSERT INTO mantasignatura(id_asignatura_fk, rut_docente_fk, rut_alumno_fk, cod_ciclo_fk)
+	VALUES (_id_asignatura_fk, _rut_docente_fk, _rut_alumno_fk, _cod_ciclo_fk);
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE eliminarMantAsignatura(
+	IN _id_mantasignatura INT
+)
+BEGIN
+	DELETE FROM mantasignatura WHERE id_mantAsignatura = _id_mantasignatura;
+END
+//DELIMITER;
+
+
+DELIMITER //
+CREATE PROCEDURE selectDetallePago()
+BEGIN
+	SELECT d.id_pago, c.rut_docente_fk, d.fecha_pago, d.sueldo_liquido
+	from contrato c,  detalle_pago d
+	WHERE c.id_contrato = d.id_contrato_fk;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE selectSueldoBruto(
+in _id_contrato INT
+)
+BEGIN
+	SELECT c.sueldo_bruto, c.salud, c.fecha_contrato, COUNT(m.rut_docente_fk) as total FROM contrato c, docente d, mantasignatura m
+WHERE c.id_contrato = _id_contrato AND
+c.rut_docente_fk = d.rut_docente
+AND d.rut_docente = m.rut_docente_fk ;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE insertDetallePago(
+in 	_fecha_pago DATETIME,
+	_id_contrato_fk INT,
+	_sueldo_liquido FLOAT
+)
+BEGIN
+	INSERT into detalle_pago (fecha_pago, id_contrato_fk, sueldo_liquido) 
+	VALUES(_fecha_pago, _id_contrato_fk, _sueldo_liquido);
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE eliminarDetallePago(
+	IN _id_pago INT
+)
+BEGIN
+	DELETE FROM detalle_pago WHERE id_pago = _id_pago;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE autenticar(
+	in  _nombre_usuario varchar(50),
+		_password varchar(50)
+)
+BEGIN
+	SELECT * FROM usuario WHERE nombre_usuario = _nombre_usuario AND password = _password;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE selectTipoUsuario(
+	in  _nombre_usuario varchar(50)
+)
+BEGIN
+	SELECT tipo_usuario FROM usuario WHERE nombre_usuario = _nombre_usuario;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE selectUsuariosPersonal()
+BEGIN
+	Select u.id_usuario, u.nombre_usuario, u.password, u.tipo_usuario , up.rut_personal_fk
+	FROM usuario u, usuariosPersonal up
+	WHERE u.id_usuario = up.id_usuario_fk;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE insertUsuariosPersonal(
+in 	_nombre_usuario varchar(50),
+	_password varchar(50),
+	_tipo_usuario varchar(20),
+	_rut_personal varchar(20)
+)
+BEGIN
+	insert into usuario(nombre_usuario, password, tipo_usuario) 
+	values(_nombre_usuario, _password, _tipo_usuario);
+
+	SET @last_ID = LAST_INSERT_ID();
+
+	insert into usuariosPersonal(rut_personal_fk, id_usuario_fk)
+	values(_rut_personal, @last_ID);
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE modificarUsuario(
+	IN _id_usuario INT,
+		_nombre_usuario VARCHAR(90),
+		_password varchar(50),
+		_tipo_usuario varchar(20)
+)
+BEGIN
+	UPDATE usuario SET nombre_usuario = _nombre_usuario, password = _password, tipo_usuario = _tipo_usuario
+	WHERE id_usuario = _id_usuario;
+END
+// DELIMITER
+
+DELIMITER //
+CREATE PROCEDURE eliminarUsuarioPersonal(
+	IN _id_usuario INT
+)
+BEGIN
+	DELETE FROM usuariosPersonal WHERE id_usuario_fk = _id_usuario;
+	DELETE FROM usuario WHERE id_usuario = _id_usuario;
+END
+//DELIMITER;
+
+
+DELIMITER //
+CREATE PROCEDURE selectUsuariosAlumno()
+BEGIN
+	Select u.id_usuario, u.nombre_usuario, u.password, u.tipo_usuario , up.rut_alumno_fk
+	FROM usuario u, usuariosAlumno up
+	WHERE u.id_usuario = up.id_usuario_fk;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE insertUsuariosAlumno(
+in 	_nombre_usuario varchar(50),
+	_password varchar(50),
+	_tipo_usuario varchar(20),
+	_rut_personal varchar(20)
+)
+BEGIN
+	insert into usuario(nombre_usuario, password, tipo_usuario) 
+	values(_nombre_usuario, _password, _tipo_usuario);
+
+	SET @last_ID = LAST_INSERT_ID();
+
+	insert into usuariosAlumno(rut_alumno_fk, id_usuario_fk)
+	values(_rut_personal, @last_ID);
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE eliminarUsuarioAlumno(
+	IN _id_usuario INT
+)
+BEGIN
+	DELETE FROM usuariosAlumno WHERE id_usuario_fk = _id_usuario;
+	DELETE FROM usuario WHERE id_usuario = _id_usuario;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE selectUsuariosDocente()
+BEGIN
+	Select u.id_usuario, u.nombre_usuario, u.password, u.tipo_usuario , up.rut_docente_fk
+	FROM usuario u, usuariosDocente up
+	WHERE u.id_usuario = up.id_usuario_fk;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE insertUsuariosDocente(
+in 	_nombre_usuario varchar(50),
+	_password varchar(50),
+	_tipo_usuario varchar(20),
+	_rut_personal varchar(20)
+)
+BEGIN
+	insert into usuario(nombre_usuario, password, tipo_usuario) 
+	values(_nombre_usuario, _password, _tipo_usuario);
+
+	SET @last_ID = LAST_INSERT_ID();
+
+	insert into usuariosDocente(rut_docente_fk, id_usuario_fk)
+	values(_rut_personal, @last_ID);
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE eliminarUsuarioDocente(
+	IN _id_usuario INT
+)
+BEGIN
+	DELETE FROM usuariosDocente WHERE id_usuario_fk = _id_usuario;
+	DELETE FROM usuario WHERE id_usuario = _id_usuario;
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE selectAlumnosVista(
+	IN _nombre_usuario varchar(50)
+)
+BEGIN
+	SELECT a.rut_alumno, a.nombre_alumno, a.apellidos_alumno, a.sexo, a.direccion_alumno, a.telefono_alumno,
+	a.email_alumno FROM alumno a, usuariosAlumno aa, usuario u
+	WHERE u.nombre_usuario = _nombre_usuario
+	AND u.id_usuario = aa.id_usuario_fk
+	AND a.rut_alumno = aa.rut_alumno_fk; 
+END
+//DELIMITER;
+
+DELIMITER //
+CREATE PROCEDURE selectDocentesVista(
+	IN _nombre_usuario varchar(50)
+)
+BEGIN
+	SELECT d.rut_docente, d.nombre_docente, d.apellido_docente, d.sexo, d.direccion_docente, d.telefono_docente,
+	d.email_docente, d.titulo_docente FROM docente d, usuariosDocente aa, usuario u
+	WHERE u.nombre_usuario = _nombre_usuario
+	AND u.id_usuario = aa.id_usuario_fk
+	AND d.rut_docente = aa.rut_docente_fk; 
+END
+//DELIMITER;
