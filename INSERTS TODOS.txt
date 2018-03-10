@@ -1,0 +1,400 @@
+INSERT INTO `alumno` 
+(`rut_alumno`, `nombre_alumno`, `apellidos_alumno`, `sexo`, `direccion_alumno`, `telefono_alumno`, `email_alumno`) 
+VALUES 
+
+ ('16.786.957-2', 'claudio jose','sepulveda muñoz','masculino','sanchez 6062','27740001', 'JOEO@GMAIL.COM'),
+ ('12.801.615-5', 'JOHAN JOSEPH','AASGAARD PAREDES','masculino','LYON 3500  606','27740002', 'JOShkhEO@GMAIL.COM'),
+ ('13.172.624-4', 'MONICA ANDREA','AASGAARD PAREDES','femenino','LYON 3500 606','27740002','JnOSEO@GMAIL.COM'),
+ ('9.222.995-5', 'CARMEN ALICIA','ABAD ARJONA ','femenino','MARATHON 1100 208  ', '27740004', 'JOSEO@GMAIL.COM'),
+ ('7.060.919-3 ', 'CLAUDIO ANDRES','ABAD CASTELLO','masculino','CORDOVA 6162','27740005', 'kjhOSEO@GMAIL.COM'),
+ ('5.665.490-9 ', 'MARIO ALFONSO', 'ABAD EGNEM ', 'masculino', 'CORDOVA 6063', '27740006', 'JOSkkiEO@GMAIL.COM'),
+ ('16.937.528-3 ', 'CATALINA PAZ', 'ABAD FELIU', 'femenino', ' EZEQUIEL FERNANDEZ 835 ', '27740007', 'koiOSEO@GMAIL.COM'),
+ ('16.122.511-8', 'ANA VERONICA  ', 'ABAD HERNANDEZ ', 'femenino', 'IGNACIO VERGARA 3484', '27740008', 'jiuygyJOSEO@GMAIL.COM'),
+ ('10.361.718-9 ', 'JESSICA LOURDES ', 'ABAD HERNANDEZ ', 'femenino','IGNACIO VERGARA 3484', '27740009', 'jghhghJOSEO@GMAIL.COM'),
+ ('15.633.924-5', ' SUSAN LISSETTE ', 'ABAD HERNANDEZ', 'femenino', 'IGNACIO VERGARA 3484', '27740010', 'gfghftO@GMAIL.COM'),
+ ('18.724.786-1', 'CLAUDIO ANDRES ', 'ABAD ORTIZ ', 'masculino', 'LOS TRES ANTONIOS 639 DPTO, 12', '27740011', 'jkjhgfJOSEO@GMAIL.COM'),
+ ('17.858.131-7 ', 'IGNACIO FERNANDO ELIECER ', 'ABAD PARRAGUEZ ', 'masculino','CALLE NUEVA 1870', '27740012', 'kkoJOSEO@GMAIL.COM'),
+ ('6.531.154-2 ', 'RUTH MARIA DE LOURDES ', 'ABAD RODRIGUEZ ', 'femenino', 'SANCHEZ 6060', '27740013', 'JjjhOSEO@GMAIL.COM'),
+ ('12.890.598-7 ', 'PAULA ANDREA ','ABAD SALGADO ', 'femenino', 'ARTIFICIO 620 G', '27740014', 'uuytSEO@GMAIL.COM'),
+ ('7.322.481-0 ', 'MAXIMO RAMON ', 'ABAD SEPULVEDA ', 'masculino', 'JOSE IG VERGARA 3484', '27740015', 'llkJOSEO@GMAIL.COM'),
+ ('7.819.137-6 ', 'CLAUDIA ALEJANDRA', 'ABAD TORREALBA ', 'femenino', 'JOSE DGO CAÑAS 1061 ', '27740016', 'mmbvJOSEO@GMAIL.COM'),
+ ('13.038.215-0', 'JOSE MIGUEL', 'ABAD WETZIG ', 'masculino', 'LOS TRES ANTONIOS 639 DP 23', '27740017', 'ñññpoiJOSEO@GMAIL.COM'),
+ ('14.003.842-3 ', 'SEBASTIAN AARON', 'ABAD WETZIG ', 'masculino', 'LOS TRES ANTONIOS 1136 55   DPTO 14 ', '779150831', 'llouyJOSEO@GMAIL.COM'),
+ ('5.430.868-K ', 'CARMEN ADELINA', 'ABADAL ALVAREZ', 'femenino', 'EX FERNANDEZ 1369 CS H', '27740019', 'jjouiyJOSEO@GMAIL.COM'),
+ ('16.931.974-k ', 'MARGARITA AIDA', 'ABADAL ALVAREZ ', 'femenino', 'CAKKE 12 1765 PB CRUZ GANA', '27740020', 'kOSEO@GMAIL.COM'),
+ ('7.048.737-3', 'MARGARITA AIDA', 'ABADAL ALVAREZ ', 'femenino', 'MUJ CAKKE 12 1765 PB CRUZ GANA', '27740021', 'mmoSEO@GMAIL.COM'),
+ ('16.558.478-3 ', 'MARIA SOLEDAD ', 'ABADAL BRIEVA ', 'femenino', 'TENIENTE MONTT 1988', '27740022', 'JyyutOSEO@GMAIL.COM'),
+ ('2.350.300-K ', ' ROSA TEODORA', 'ABADAL SALINAS', 'femenino',  'PUCHACAI 1958 VI LOS ALERCES ', '27740023', 'hhuyJOSEO@GMAIL.COM'),
+ ('6.234.364-8', 'ANA MARIA', 'ABADIE MASSIFF', 'femenino', 'ANTILHUE 5586 M ', '27740024', 'ggoOSEO@GMAIL.COM'),
+ ('7.126.207-3', 'KATTY ELIZABETH', 'ABADIE MASSIFF', 'femenino', 'R CRUZ 562 DP 73 VI FREI', '27740025', 'ytrewSEO@GMAIL.COM'),
+ ('6.693.021-1 ', 'OLIVIA JONES', 'SANCHEZ SALAS', 'femenino', 'PUCHACAI 1958', '27740026', 'EO@GMAIL.COM'),
+ ('5.925.930-K ', 'MAURICIO JOAE', 'SANCHEZ SEPULVEDA', 'masculino', 'PUCHACAI 195', '27740027', 'J@GMAIL.COM'),
+ ('3.245.474-7 ', 'CARLA ANTONIA', 'CORTES CORTES', 'femenino', 'PUCHACAI 197', '27740028', 'nnjEO@GMAIL.COM'),
+ ('6.136.932-5 ', 'JOSE PATRICIO', 'MUÑOZ CORTES', 'masculino', 'PUCHACAI NORTE 1958', '27740029', '998y@GMAIL.COM'),
+ ('16.386.073-2 ', 'DIEGO BRIAN', 'PEREZ YOMA', 'masculino', 'PUCHACAI SUR 54', '27740030', 'hhhEO@GMAIL.COM'),
+ ('11.884.657-5 ', 'JOSE JUAN', 'ARIAS COL', 'masculino', 'MAIPU 65', '27740031', 'lllEO@GMAIL.COM'),
+ ('9.495.821-0 ', 'JUAN JOSE', 'ARIAS MUÑOZ', 'masculino', 'MAIPU 865', '27740032', 'tttreJOSEO@GMAIL.COM'),
+ ('10.407.633-5 ', 'JOSE PATRICIO', 'LOPEZ DER', 'masculino', 'MAIPU 89', '27740033', '8JOSEO@GMAIL.COM'),
+ ('8.961.709-K', 'RICHARD ANTONIO', 'GONZALES PEREZ', 'masculino', 'HUELEN 876', '27740034', 'ppoO@GMAIL.COM'),
+ ('6.389.275-0 ', 'NORBERTO  ENRIQUE', 'GONZALES GUIAN', 'masculino', 'HUELEN 76', '27740035', 'vvfEO@GMAIL.COM'),
+ ('8.828.717-7 ', 'ISAIS ABRAHAM', 'CASTRO ACHURRA', 'masculino', 'HUELEN 865', '27740036', 'jjgfdJOSEO@GMAIL.COM'),
+ ('9.611.441-9', 'CLAUDIO ENRIQUE', 'VALENZUELA GIN', 'masculino', 'BANDERA 432', '27740037', 'asdJOSEO@GMAIL.COM'),
+ ('7.694.374-5', 'JOSE MARCO', 'CARTES COLIHINCA', 'masculino', 'BANDERA 23', '27740038', 'aseswJOSEO@GMAIL.COM'),
+ ('3.028.837-8', 'MARCO AURELIO', 'ALARCON PEREZ', 'masculino', 'BANDERA 654', '27740039', 'uuuytJOSEO@GMAIL.COM'),
+ ('3.313.002-3 ', 'MARCO ANTONIO', 'ALARCON GONZALOS', 'masculino', 'MEIGG 876', '27740040', 'jjhuJOSEO@GMAIL.COM'),
+ ('16.015.303-', 'ANTONIO JAVIER', 'VARGAS SANCHES', 'masculino', 'MEIGG 6062', '27740041', 'hhhgtfJOSEO@GMAIL.COM'),
+ ('13.923.174-0', 'JAVIER TITO', 'VARGAS ESCOBAR', 'masculino', 'CATEDRAL 78', '27740042', 'koiuhySEO@GMAIL.COM'),
+ ('13.658.802-8 ', 'ISMAEL GERARDO', 'ESCOBAR VENEGAS', 'masculino', 'CATEDRAL 876', '27740043', 'JOO@GMAIL.COM'),
+ ('4.953.531-7', 'BENJAMIN ALEJANDRO', 'VENEGAS CASTRO', 'masculino', 'CATEDRAL 8765', '27740044', 'claJOSEO@GMAIL.COM'),
+ ('19.739.966-K', 'ALEJANDRO ANDRES', 'YOMA MORANDE', 'masculino', 'MONEDA 43', '27740045', '88865JOSEO@GMAIL.COM'),
+ ('13.600.760-2', 'ROBERTO ANDRES', 'CASTRO PAREDES', 'masculino', 'MONEDA 543', '27740046', 'dsasJOSEO@GMAIL.COM'),
+ ('14.468.414-1', 'ROBERTO CARLOS', 'RIVAROLA CAMPOS', 'masculino', 'MONEDA 7865', '27740047', 'jhbgvSEO@GMAIL.COM'),
+ ('18.881.267-8', 'JOSE ANTONIO', 'RIVAROLA ACHURRA', 'masculino', 'TEATINO 765', '27740048', 'xxszJOSEO@GMAIL.COM'),
+ ('6.719.174-9 ', 'CRISTOBAL ABEL', 'GUZMAN GONZALES', 'masculino', 'GENERA 765', '27740049', 'JjijuygEO@GMAIL.COM'),
+ ('13.550.507-2', 'CARLOS ABEL', 'ROA VARGAS', 'masculino', 'GENERA 765', '27740050', 'uuytyO@GMAIL.COM'),
+ ('8.808.680-5', 'MAURICIO ROBERTO', 'ROA LLANTEN', 'masculino', 'GENERA 765', '27740051', 'jjhuhyJOSEO@GMAIL.COM'),
+ ('9.959.432-2 ', 'DIEGO ALFONSO', 'MENESES URRUTIA', 'masculino', 'CONDOR 654', '27740052', 'JttrekSEO@GMAIL.COM'),
+ ('8.322.172-0 ', 'CARLOS ALFONSO', 'MENESES AZOCAR', 'masculino', 'CONDOR 876', '27740053', 'mmoinJOSEO@GMAIL.COM'),
+ ('22.293.369-2', 'DIEGO ALEJANDRO', 'PIÑERA ROA', 'masculino', 'CONDOR 543', '27740054', 'lloinJOSEO@GMAIL.COM'),
+ ('16.495.161-8 ', 'LUIS MIGUEL', 'MARTINEZ JIL', 'masculino', 'CONDOR 54', '27740055', 'nnmlmJOSEO@GMAIL.COM'),
+ ('4.709.739-8', 'BRUCE JAVIER', 'SOLORSA ESCOBAR', 'masculino', 'VOLCAN 54', '27740056', 'JOjjuhySEO@GMAIL.COM'),
+ ('4.952.141-3', 'ARIEL ALEJANDRO', 'COLIHUINCA CASTRO', 'masculino', 'VOLCAN 65', '27740057', 'kkiuhJOSEO@GMAIL.COM'),
+ ('4.249.149-7 ', 'ESTEBAN ALEJANDRO', 'SANCHEZ VALDIVIA', 'masculino', 'VOLCAN 654', '27740058', 'kkoiuytJOSEO@GMAIL.COM'),
+ ('1.361.432-6', 'MOISES JUDAS', 'VALDIVIA VIDAL', 'masculino', 'NATRE 543', '27740059', 'ddeswJOSEO@GMAIL.COM'),
+ ('19.729.637-2', 'ADOLFO JAVIER', 'VIDAL VIDAL', 'masculino', 'GIL 8778', '27740060', 'xxsesJOSEO@GMAIL.COM'),
+ ('3.262.712-9', 'RODOLFO JUAN', 'MEDEL MEDEL', 'masculino', 'VIVACETA 532', '27740061', 'uytrerSEO@GMAIL.COM'),
+ ('13.070.663-0', 'ERICK STEVEN', 'BRAVO VIDAL', 'masculino', 'VIVACETA 543', '27740062', 'plokiJOSEO@GMAIL.COM'),
+ ('2.816.151-4 ', 'CRISTIAN MARCO', 'UBILLA UBILLA', 'masculino', 'VIVACETA 54', '27740063', 'ewaqwOSEO@GMAIL.COM'),
+ ('13.091.566-3', 'EUGENIO ALBERTO', 'CARO UBILLA', 'masculino', 'MAN 9876', '27740064', 'mnbvfvfcSEO@GMAIL.COM'),
+ ('9.773.427-5', 'MOISES EUGENIO', 'HERRERA VIDAL', 'masculino', 'MAULE 643', '27740065', 'ggtfrJOSEO@GMAIL.COM'),
+ ('16.175.780-2', 'CALUDIO ANTONIO', 'DUBBO AMENAR', 'masculino', 'ALAMO 7654', '27740066', 'uytOSEO@GMAIL.COM'),
+ ('13.671.817-7', 'PEDRO EZEQUEL', 'CARTES CARTER', 'masculino', 'ALAMO 6754', '27740067', 'iuJOSEO@GMAIL.COM'),
+ ('16.210.151-K', 'PEDRO ALBERTO', 'SANCHEZ VIDAL', 'masculino', 'KIA 5432', '27740068', 'JkojEO@GMAIL.COM'),
+ ('10.645.901-0 ', 'CAMILO ANDRES', 'GONZALES ZUÑIGA', 'masculino', 'GAMONAL 897', '27740069', 'JOkoiEO@GMAIL.COM'),
+ ('6.468.525-2', 'JOSE MARIA', 'PIZARRO CONSTA', 'masculino', 'COLIBRI 6543', '27740070', 'uytfvEO@GMAIL.COM'),
+ ('4.298.961-4 ', 'MATEO ROBIN', 'ALAIN GUNKO', 'masculino', 'COLIBRI 987', '27740071', 'mmnbJOSEO@GMAIL.COM'),
+ ('2.940.831-9 ', 'MIGUEL JORGE', 'BIZCARRA PEREZ', 'masculino', 'DESREA 554', '27740072', 'JijuySEO@GMAIL.COM'),
+ ('12.907.679-8', 'JORGE ALEJANDRO', 'BARRA IBARRA', 'masculino', 'YUNKE 54', '27740073', 'yyyOSEO@GMAIL.COM'),
+ ('12.578.970-6', 'JAVIER ALEJANDRO', 'sepulveda muñoz', 'masculino', 'YUNKE 532', '27740074', 'ttrewswSEO@GMAIL.COM'),
+ ('13.278.406-K ', 'TITO ALBERTO', 'SAIRE DONAIRE', 'masculino', 'JUAN AGUILAR 7', '27740075', 'ñññlSEO@GMAIL.COM'),
+ ('19.317.454-K ', 'DANILO ALEJANDRO', 'CALIXTO CARRASCO', 'masculino', 'JUAN AGUILAR 76', '889150831', 'JlokEO@GMAIL.COM'),
+ ('15.697.968-6', 'DANIEL ANDRES', 'CARRASCO MARTIENES', 'masculino', 'BAÑBOA 8765', '27740077', 'JmnbvcEO@GMAIL.COM'),
+ ('18.640.098-4', 'GONZALO JUAN', 'MARTINES CARRASCO', 'masculino', 'VERACRUZ 743', '27740078', 'nnbvJOSEO@GMAIL.COM'),
+ ('16.656.496-4 ', 'ROMEO JUAN', 'LIBERONA RIVERA', 'masculino', 'VERACRUZ 765', '27740079', 'loiuySEO@GMAIL.COM'),
+ ('16.257.523-6 ', 'ANDRES CRISTIAN', 'RIBERA CUBILLO', 'masculino', 'PONCE 6062', '27740080', 'ccdxSEO@GMAIL.COM'),
+ ('17.667.474-1 ', 'CARLO CLAUDIO', 'RIVERA MARTINES', 'masculino', 'VOLY 6585', '27740081', 'hhuygOSEO@GMAIL.COM'),
+ ('6.626.090-9 ', 'ANDRES CRISTOBAL', 'CUBILLO CUBILLO', 'masculino', 'LOA 543', '27740082', 'pouygEO@GMAIL.COM'),
+ ('11.867.433-2 ', 'JOSE ALEJANDRO', 'LAGOS WEBER', 'masculino', 'RENO 876', '27740083', 'mmbtfSEO@GMAIL.COM'),
+ ('13.694.898-9', 'JUAN CARLO', 'LAGOS MUÑOZ', 'masculino', 'KIA 43', '27740084', 'llloSEO@GMAIL.COM'),
+ ('20.900.960-9 ', 'ALBERTO MARCO ANDRES', 'LAGOS RIOS', 'masculino', 'KIA 65', '27740085', 'nnbvcdxSEO@GMAIL.COM'),
+ ('5.543.101-9 ', 'CRISTIAN ALEJANDRO', 'RIO LAGO', 'masculino', 'KIA 432', '27740086',  'joujJOSEO@GMAIL.COM'),
+ ('4.280.054-6 ', 'JUAN GABRIEL', 'ZAMORANO PEREZ', 'masculino', 'NEPTUNO 876', '27740087', 'llpougtJOSEO@GMAIL.COM'),
+ ('15.364.425-K ', 'ALEJANDRO TITO', 'PIRLO GATUSSO', 'masculino', 'YUNKE 323', '27740088','kokoSEO@GMAIL.COM'),
+ ('15.777.533-2 ', 'LUIS ALBERTO', 'PRLO PIRLO', 'masculino', 'MAULE 6543', '27740089', 'loloSEO@GMAIL.COM'),
+ ('15.112.714-2', 'ENRIQUE JOSE', 'SANCHEZ MEDEL', 'masculino', 'USPALLATA 66', '27740090', 'kikiJOSEO@GMAIL.COM'),
+ ('11.832.400-5 ', 'EDDIE CARLO', 'BRAVO ACHURRA', 'masculino', 'BIYU 87', '27740091',  'JOkkjiSEO@GMAIL.COM'),
+ ('10.928.589-7 ', 'DIEGO PABLO', 'SAKURAGI PEREZ', 'masculino', 'VILLAROEL 8765', '27740092', 'ccdxdJOSEO@GMAIL.COM'),
+ ('8.147.618-7 ', 'PABLO LUIS', 'QUIESPE PEN', 'masculino', 'TONGOY 76', '27740093', 'zzaewsSEO@GMAIL.COM'),
+ ('2.693.234-3 ', 'CARLOS ANDRES', 'LOA FORD', 'masculino', 'MONSERRAT 54', '27740094', 'aaawsOSEO@GMAIL.COM'),
+ ('8.447.220-4 ', 'JOSE JULIO', 'LOA CASTRO', 'masculino', 'JOUT 654', '27740095', 'jjiuhOSEO@GMAIL.COM'),
+ ('7.477.429-6 ', 'JULIO ESTEVAN', 'MORALES MORAGA', 'masculino', 'MAULLIN 765', '27740096', 'mnhbSEO@GMAIL.COM'),
+ ('9.008.298-1 ', 'JORGE PACO', 'MORALES ROA', 'masculino', 'MAULEE 2', '27740097', 'JkkokOSEO@GMAIL.COM'),
+ ('4.575.894-K ', 'AQUILES ALEXIS', 'MORALES MESIAS', 'masculino', 'LOA 1', '27740098', 'llpolikuJOSEO@GMAIL.COM'),
+ ('6.723.828-1 ', 'FRANCO AXEL', 'CASTILLO PEREZ', 'masculino', 'MAULE 44', '27740099', 'llokijJOSEO@GMAIL.COM'),
+ ('15.618.619-8', 'MAXIMO MAXIMILIANO', 'SEPULVEDA SANCHEZ', 'masculino', 'LOA 33', '27740100', 'zzsweOSEO@GMAIL.COM');
+
+
+INSERT INTO `docente`
+(`rut_docente`, `nombre_docente`, `apellido_docente`, `sexo`, `direccion_docente`, `telefono_docente`, `email_docente`, `titulo_docente`)
+VALUES 
+	('11.888.842-1 ','JOSE OSVALDO', 'RIQUELME SOSA', 'MASCULINO', 'EL LIRO 6564', '949123454', 'JOSEO@GMAIL.COM', 'INGENIERO EN REDES'),
+	('13.433.029-5', 'NATALIA ALEJANDRA', 'PEREZ BANNEN', 'FEMENINO', 'LIMA 3454', '876543454', 'NA@GMAIL.COM', 'INGENIERA EN INFORMATICA'), 
+	('8.335.874-2 ', 'ANDREA JOSEFA', 'SUAREZ MUÑOZ', 'FEMENINO', 'LIMA 3454', '876543454', 'AA@GMAIL.COM', 'INGENIERA EN ADMINISTRACION'), 
+	('8.335.874-4 ', 'JULIETA MAITE', 'VENEGAS CASTRO', 'FEMENINO', 'LIMA 3454', '876543454', 'LINAKK@GMAIL.COM', 'INGENIERA EN SISTEMAS'), 
+	('11.163.611-7 ', 'MAITE ALEJANDRA', 'PEREZ AGUILAR', 'FEMENINO', 'LIMA 3454', '876543454', 'LIJNA@GMAIL.COM', 'INGENIERA EN INFORMATICA'), 	
+    
+	('8.398.452-K  ', 'JOSE ANTONIO',  'RIQUELME LOA', 'MASCULINO', 'EL LIRO 6564', '949123454', 'JOSJHGEO@GMAIL.COM', 'CONTADOR AUDITOR'),
+	('8.398.499-6  ', 'MARCO ALEJANDRO', 'JUAREZ CASTRO',  'MASCULINO', 'LIMA 3454', '876543454', 'HGFVDJNA@GMAIL.COM', 'INGENIERA EN ADMINISTRACION'), 
+	('9.295.136-7 ', 'MARCO ANDRES ', 'MESIAS MUÑOZ', 'MASCULINO', 'LIMA 3454', '876543454', 'NNBLINA@GMAIL.COM', 'PEDAGOGIA EN MATEMATICAS'), 
+	('16.355.367-8  ', 'JOSEFA ROSA', 'QUISPE LOTA', 'FEMENINO', 'LIMA 3454', '876543454', 'HHHLINA@GMAIL.COM', 'LICENCIATURAS EN MATEMATICAS'), 
+	('10.335.245-2  ', 'ROSA VICTORIA', 'PEREZ POZO', 'FEMENINO', 'LIMA 3454', '876543454', 'HGFVDLINA@GMAIL.COM', 'LICENCIATURAS EN MATEMATICAS'),
+		
+	('9.439.103-2  ', 'CLAUDIO JOSE', 'RIQUELMEGUZMAN', 'MASCULINO', 'EL LIRO 6564', '949123454', 'JOSENBVCO@GMAIL.COM', 'INGENIERO EN LOGISTICA'),
+	('16.840.459-K', 'VIRNA MAITE', 'ROA BANNEN', 'FEMENINO', 'LIMA 3454', '876543454', 'JUHY@GMAIL.COM', 'INGENIERA EN INFORMATICA'), 
+	('2.441.601-1', 'CAROLINA BARBARA', 'IRARRAZABAL', 'FEMENINO', 'LIMA 3454', '876543454', 'BBF@GMAIL.COM', 'INGENIERA EN INFORMATICA Y EJECUCION'), 
+	('16.940.902-1', 'HAROLD LUCERO ', 'PEREZ PEREZ', 'MASCULINO', 'LIMA 3454', '876543454', 'NHFR@GMAIL.COM', 'INGENIERA EN INFORMATICA'), 
+	('17.682.002-0 ', 'FRANCISCO JOSE', 'DELGADO PARADA', 'MASCULINO', 'LIMA 3454', '876543454', 'NNFR@GMAIL.COM', 'INGENIERA EN INFORMATICA'),
+	
+	('15.840.557-1', 'AXEL ANTONIO',  'CASTRO GONZALES', 'MASCULINO', 'EL LIRO 6564', '949123454', 'JOEOMMGCDC@GMAIL.COM', 'INGENIERO EN LOGISTICA'),
+	('7.229.255-3', 'MARCO ANDRES', 'VILCHES ARIAS', 'MASCULINO', 'LIMA 3454', '876543454', 'LNBGM@GMAIL.COM', 'INGENIERA EN INFORMATICA'), 
+	('18.274.687-8', 'ANDREA ROBERTA', 'ARIAS ARIAS', 'FEMENINO', 'LIMA 3454', '876543454', 'MMJ@GMAIL.COM', 'INGENIERA EN INFORMATICA'), 
+	('11.053.136-2 ', 'ANDRES ROBERTO', 'PEREZ CASTRO', 'MASCULINO', 'LIMA 3454', '876543454', 'BNJB@GMAIL.COM', 'INGENIERA EN INFORMATICA'), 
+	('11.262.392-2', 'CARLA ROSA', 'MUÑOZ BANNEN', 'FEMENINO', 'LIMA 3454', '876543454', 'NNGHGC@GMAIL.COM', 'INGENIERA EN INFORMATICA'),
+	
+	('4.436.435-2 ','JJORGE MAURICIO', 'ARDUAIN VICUÑA', 'MASCULINO', 'EL LIRO 6564', '949123454', 'NNVFT@GMAIL.COM', 'INGENIERO EN LOGISTICA'),
+	('10.184.578-8', 'ROSA ALEJANDRA', 'VICUÑA POZO', 'FEMENINO', 'LIMA 3454', '876543454', 'LK@GMAIL.COM', 'INGENIERA EN INFORMATICA'), 
+	('4.204.939-5  ', 'CECILIA CRISTINA', 'POZO POZO', 'FEMENINO', 'LIMA 3454', '876543454', 'JJN@GMAIL.COM', 'INGENIERA EN INFORMATICA'), 
+	('8.451.306-7 ', 'CRISTAIN PEDRO', 'HOYO ROJO', 'MASCULINO', 'LIMA 3454', '876543454', 'LLLKJH@GMAIL.COM', 'PEDAGOGIA EN INGLES'), 
+	('8.120.774-7', 'MAITE ALEJANDRA', 'ROJO VALENCIA', 'FEMENINO', 'LIMA 3454', '876543454', 'BBBVFC@GMAIL.COM', 'CONTADOR AUDITOR');
+
+
+
+INSERT INTO `institucion` (`id_institucion`, `desc_institucion`)
+ VALUES ('1', 'Santiago'),
+        ('2', 'Valparaiso'),
+	('3', 'Viña del mar'),
+	('4', 'La Serena'),
+	('5', 'Valdivia');
+
+
+INSERT INTO `personal`
+(`rut_personal`, `nombre_personal`, `apellidos_personal`, `sexo`, `direccion_personal`, `telefono_personal`, `email_personal`)
+VALUES
+	('4.220.797-7', 'JUAN JOSE', 'ARRIAZA FIGUEROA', 'MASCULINO', 'EL TREBOL 9878', '965654323', 'JJ@GMAIL.COM'),
+ 	('2.811.852-K', 'ELI ANDREA', 'SOTO SOTO', 'FEMENINO', 'ALERCE 432', '988776655', 'WELI@GMAIL.COM'),
+	('3.318.912-5', 'RICARDO ARIEL', 'AZOCAR FIGUEROA', 'MASCULINO', 'EL TREBOL 98', '96OO54323', 'RICAR@GMAIL.COM'),
+ 	('7.195.430-7', 'ALICIA ANDREA', 'PEREZ SOTO', 'FEMENINO', 'ALERCE 43', '976776655', 'PEREZ@GMAIL.COM'),
+	('6.636.670-7', 'PEDRO ENGEL', 'TORO ROA', 'MASCULINO', 'EL ALAMO 9878', '968854323', 'TORO@GMAIL.COM'),
+ 	('6.241.710-2', 'JUANA ', 'SOTO ARANEDA', 'FEMENINO', 'COIPO 43', '988888655', 'JNA@GMAIL.COM'),
+	('8.402.647-6', 'FELIPE ALBERRTO', 'OLAVE GUZMAN', 'MASCULINO', 'EL PUDU 878', '965657773', 'OLAVE@GMAIL.COM'),
+ 	('8.402.646-8', 'SONIA HELENA', 'LORCA ROJO', 'FEMENINO', 'TREBOL 432', '909776655', 'LORCA@GMAIL.COM'),
+	('12.517.493-0', 'PEDRO PAULO', 'ARRIAZA FIGUEROA', 'MASCULINO', 'EL TREBOL 9877', '905954323', 'PP@GMAIL.COM'),
+ 	('13.042.212-8', 'SONIA ALICIA', 'PAREDES SOTO', 'FEMENINO', 'ALERCE 42', '988888655', 'SONIA@GMAIL.COM');
+
+
+
+
+INSERT INTO `usuario` (`id_usuario`, `nombre_usuario`, `password`, `tipo_usuario`)
+               VALUES ('1', 'jparedes', '123456', 'Alumno'),
+                      ('2', 'mparedes', '123456', 'Alumno'),
+		      ('3', 'carjona', '123456', 'Alumno'), 
+                      ('4', 'jsosa', '123456', 'Docente'), 
+                      ('5', 'nperez', '123456', 'Docente'), 
+                      ('6', 'amunoz', '123456', 'Docente'), 
+                      ('7', 'jfigueroa', '123456', 'Personal'), 
+                      ('8', 'esoto', '123456', 'Personal'), 
+                      ('9', 'rfigueroa', '123456', 'Personal');
+
+INSERT INTO `usuariosalumno` (`id_usuariosAlumno`, `rut_alumno_fk`, `id_usuario_fk`) 
+                      VALUES ('1', '12.801.615-5','1'), 
+                             ('2', '13.172.624-4','2'), 
+                             ('3', '9.222.995-5', '3');
+ 
+INSERT INTO `usuariosdocente`(`id_usuariosdocente`, `rut_docente_fk`, `id_usuario_fk`) 
+                      VALUES ('1', '11.888.842-1','4'), 
+                             ('2', '13.433.029-5','5'), 
+                             ('3', '8.335.874-2', '6');
+
+INSERT INTO `usuariospersonal`(`id_usuariosPersonal`, `rut_personal_fk`, `id_usuario_fk`) 
+                      VALUES ('1', '4.220.797-7', '7'), 
+                             ('2', '2.811.852-K', '8'), 
+                             ('3', '3.318.912-5', '9');
+
+
+INSERT INTO `contrato` (`id_contrato`, `rut_docente_fk`, `fecha_contrato`, `duracion_contrato`, `salud`, `sueldo_bruto`) 
+	     VALUES ('1', '2.441.601-1', '2015-01-02 09:24:24', '2', 'Fonasa', '800000'), 
+		    ('2', '4.204.939-5', '2015-01-02 09:24:24', '2', 'Fonasa', '800000'),
+ 		    ('3', '4.436.435-2', '2015-01-02 09:24:24', '2', 'Fonasa', '800000'),
+ 		    ('4', '7.229.255-3', '2016-01-02 09:24:24', '1', 'Fonasa', '800000'),
+ 		    ('5', '8.120.774-7', '2016-01-02 09:24:24', '1', 'Fonasa', '750000'),
+ 		    ('6', '8.335.874-2', '2016-01-02 09:24:24', '2', 'Fonasa', '870000'),
+ 		    ('7', '8.335.874-4', '2016-01-02 09:24:24', '2', 'Isapre', '976000'), 
+		    ('8', '8.398.452-K', '2016-01-02 09:24:24', '1', 'Fonasa', '876000'),
+ 		    ('9', '8.398.499-6', '2015-02-02 09:24:24', '3', 'Isapre', '876000'),
+ 		    ('10', '8.451.306-7', '2015-02-02 09:24:24','2', 'Fonasa', '865000'), 
+		    ('11', '9.295.136-7', '2015-01-02 10:24:24','2', 'Fonasa', '678000'),
+ 		    ('12', '9.439.103-2', '2015-04-02 09:24:24','2', 'Fonasa', '786000'), 
+	            ('13', '10.184.578-8', '2015-03-02 09:24:24', '2', 'Fonasa', '879000'), 
+		    ('14', '10.335.245-2', '2015-01-11 09:24:24', '3', 'Fonasa', '867000'), 
+		    ('15', '11.053.136-2', '2015-01-06 09:24:24', '3', 'Isapre', '967000'), 
+	 	    ('16', '11.163.611-7', '2015-01-12 09:24:24', '2', 'Isapre', '867000'), 
+		    ('17', '11.262.392-2', '2014-01-02 09:24:24', '3', 'Fonasa', '998000'), 
+		    ('18', '11.888.842-1', '2015-01-02 09:24:24', '2', 'Fonasa', '786000'), 
+		    ('19', '13.433.029-5', '2015-01-02 09:24:24', '2', 'Fonasa', '887000'), 
+		    ('20', '15.840.557-1', '2015-01-02 09:24:24', '2', 'Fonasa', '999000'), 
+		    ('21', '16.355.367-8', '2015-01-02 09:24:24', '2', 'Isapre', '850000'), 
+		    ('22', '16.840.459-K', '2015-01-02 09:24:24', '2', 'Fonasa', '778000'), 
+		    ('23', '16.940.902-1', '2015-01-02 09:24:24', '3', 'Fonasa', '877000'), 
+		    ('24', '17.682.002-0', '2015-01-02 09:24:24', '2', 'Fonasa', '856000'), 
+		    ('25', '18.274.687-8', '2016-01-06 09:24:24', '2', 'Fonasa', '856000');
+
+
+INSERT INTO `carrera` (`id_carrera`, `desc_carrera`) 
+	        VALUES('1', 'enfermeria'),
+                      ('2', 'construccion'),
+                      ('3', 'mineria'),
+                      ('4', 'contabilidad'), 
+	              ('5', 'masoterapia'),
+                      ('6', 'gastronomia'),
+                      ('7', 'parvulo'),
+                      ('8', 'odontologia'),
+                      ('9', 'turismo'),
+                      ('10', 'topografia');
+
+
+INSERT INTO `ciclo` (`cod_ciclo`, `desc_ciclo`, `anio_ciclo`, `id_carrera_fk`)
+	     VALUES ('C001',  'ENF416D', '2016', '1'),
+                    ('C002',  'CNT416D', '2016', '2'),
+                    ('C003',  'MNR117V', '2017', '3'),
+                    ('C004',  'CTB117V', '2017', '4'),
+                    ('C005',  'MST117V', '2017', '5'),
+                    ('C006',  'GTR117V', '2017', '6'),
+                    ('C007',  'PRV117V', '2017', '7'),
+                    ('C008',  'ODT117V', '2017', '8'),
+                    ('C009',  'TRM117V', '2017', '9'), 
+                    ('C0010', 'TPG117V', '2017', '10'); 
+
+
+
+
+INSERT INTO `matricula`(`id_matricula`, `rut_alumno_fk`, `id_institucion_fk`, `id_carrera_fk`, `cod_ciclo_fk`, `semestre`, `monto`, `fecha_matricula`, `modalidad`) 
+		VALUES ('1', '16.786.957-2',  '1', '1', 'C001', '4', '125000', '2016-03-03 16:34:42', 'diurno'),
+		       ('2', '12.801.615-5',  '1', '1', 'C001', '4', '125000', '2016-03-03 16:34:00', 'diurno'),
+		       ('3', '13.172.624-4',  '1', '1', 'C001', '4', '125000', '2016-04-03 16:34:42', 'diurno'),
+		       ('4', '9.222.995-5',  '1', '1', 'C001', '4', '125000', '2016-03-03 14:34:42', 'diurno'),
+		       ('5', '7.060.919-3 ',  '1', '1', 'C001', '4', '125000', '2016-03-03 19:34:04', 'diurno'),
+ 		       ('6', '5.665.490-9 ',  '1', '1', 'C001', '4', '125000', '2016-03-03 10:34:42', 'diurno'),
+		       ('7', '16.937.528-3 ', '1', '1', 'C001', '4', '125000', '2016-03-02 16:34:42', 'diurno'),
+		       ('8', '16.122.511-8',  '1', '1', 'C001', '4', '125000', '2016-03-01 16:34:42', 'diurno'),
+		       ('9', '10.361.718-9 ',  '1', '1', 'C001', '4', '125000', '2016-02-02 16:34:42', 'diurno'),
+		       ('10', '15.633.924-5','1', '1', 'C001', '4', '125000', '2016-01-02 16:34:42', 'diurno'),
+		       ('11', '18.724.786-1', '1', '1', 'C001', '4', '125000', '2016-02-22 16:34:42', 'diurno'),
+		       ('12', '17.858.131-7 ', '1', '1', 'C001', '4', '125000', '2016-01-02 18:34:42', 'diurno'),
+		       ('13', '6.531.154-2 ','1', '1', 'C001', '4', '125000', '2016-02-12 16:34:42', 'diurno'),
+		       ('14', '12.890.598-7 ', '1', '1', 'C001', '4', '125000', '2016-03-02 10:34:41', 'diurno'),
+		       ('15', '7.322.481-0 ', '1', '1', 'C001', '4', '125000', '2016-01-09 16:34:42', 'diurno'), 
+		       ('16', '7.819.137-6 ', '1', '1', 'C001', '4', '125000', '2016-01-02 11:34:42', 'diurno'),
+		       ('17', '13.038.215-0', '1', '1', 'C001', '4', '125000', '2016-02-22 16:34:42', 'diurno'),
+		       ('18', '14.003.842-3 ', '1', '1', 'C001', '4', '125000', '2016-01-02 18:34:42', 'diurno'),
+		       ('19','5.430.868-K ',  '1', '1', 'C001', '4', '125000', '2016-02-12 16:34:42', 'diurno'),
+		       ('20', '16.931.974-k ', '1', '1', 'C001', '4', '125000', '2016-03-02 10:34:42', 'diurno');
+
+
+INSERT INTO `matricula`(`id_matricula`, `rut_alumno_fk`, `id_institucion_fk`, `id_carrera_fk`, `cod_ciclo_fk`, `semestre`, `monto`, `fecha_matricula`, `modalidad`) 
+		 VALUES('21','7.048.737-3',   '1', '2', 'C002', '4', '130000', '2016-01-03 06:24:42', 'diurno'), 
+		       ('22','16.558.478-3 ', '1', '2', 'C002', '4', '130000', '2016-02-03 06:24:42', 'diurno'), 
+ 		       ('23','2.350.300-K ',  '1', '2', 'C002', '4', '130000', '2016-02-04 06:24:42', 'diurno'), 
+   		       ('24','6.234.364-8',  '1', '2', 'C002', '4', '130000', '2016-02-05 06:24:42', 'diurno'), 
+  		       ('25','7.126.207-3',  '1', '2', 'C002', '4', '130000', '2016-02-06 06:24:42', 'diurno'), 
+ 		       ('26','6.693.021-1 ',  '1', '2', 'C002', '4', '130000', '2016-02-07 06:24:42', 'diurno'), 
+		       ('27','5.925.930-K ', '1', '2', 'C002', '4', '130000', '2016-02-08 06:24:42', 'diurno'), 
+ 		       ('28','3.245.474-7 ',  '1', '2', 'C002', '4', '130000', '2016-02-09 06:24:42', 'diurno'), 
+   		       ('29','6.136.932-5 ',  '1', '2', 'C002', '4', '130000', '2016-02-10 06:24:42', 'diurno'), 
+  		       ('30','16.386.073-2 ', '1', '2', 'C002', '4', '130000', '2016-02-11 06:24:42', 'diurno'), 
+ 		       ('31','11.884.657-5 ',  '1', '2', 'C002', '4', '130000', '2016-02-12 06:24:42', 'diurno'), 
+	  	       ('32','9.495.821-0 ',  '1', '2', 'C002', '4', '130000', '2016-02-13 06:24:42', 'diurno'), 
+               ('33','10.407.633-5 ',  '1', '2', 'C002', '4', '130000', '2016-02-14 06:24:42', 'diurno'), 
+   	           ('34','8.961.709-K',  '1', '2', 'C002', '4', '130000', '2016-02-15 06:24:42', 'diurno'), 
+  		       ('35','6.389.275-0 ',  '1', '2', 'C002', '4', '130000', '2016-02-16 06:24:42', 'diurno'), 
+ 		       ('36','8.828.717-7 ',  '1', '2', 'C002', '4', '130000', '2016-02-17 06:24:42', 'diurno'), 
+		       ('37','9.611.441-9',  '1', '2', 'C002', '4', '130000', '2016-02-18 06:24:42', 'diurno'), 
+ 		       ('38','7.694.374-5',  '1', '2', 'C002', '4', '130000', '2016-02-19 06:24:42', 'diurno'), 
+   		       ('39','3.028.837-8',  '1', '2', 'C002', '4', '130000', '2016-02-20 06:24:42', 'diurno'), 
+  	           ('40', '3.313.002-3 ','1', '2', 'C002', '4', '130000', '2016-02-21 06:24:42', 'diurno');
+
+INSERT INTO `matricula`(`id_matricula`, `rut_alumno_fk`, `id_institucion_fk`, `id_carrera_fk`, `cod_ciclo_fk`, `semestre`, `monto`, `fecha_matricula`, `modalidad`) 
+		 VALUES('41', '16.015.303-',  '2', '3', 'C003', '1', '120000', '2017-01-03 16:34:42', 'VESPERTINO'),
+		       ('42', '13.923.174-0', '2', '3', 'C003', '1', '120000', '2017-01-03 16:34:42', 'VESPERTINO'),
+		       ('43', '13.658.802-8 ',  '2', '3', 'C003', '1', '120000', '2017-01-03 16:34:42', 'VESPERTINO'),
+		       ('44', '4.953.531-7',  '2', '3', 'C003', '1', '120000', '2017-01-03 16:34:42', 'VESPERTINO'),
+		       ('45', '19.739.966-K',  '2', '3', 'C003', '1', '120000', '2017-01-03 16:34:42', 'VESPERTINO'),
+ 		       ('46', '13.600.760-2', '2', '3', 'C003', '1', '120000', '2017-01-03 16:34:42', 'VESPERTINO'),
+		       ('47', '14.468.414-1',  '2', '3', 'C003', '1', '120000', '2017-01-03 16:34:42', 'VESPERTINO');
+
+INSERT INTO `matricula`(`id_matricula`, `rut_alumno_fk`, `id_institucion_fk`, `id_carrera_fk`, `cod_ciclo_fk`, `semestre`, `monto`, `fecha_matricula`, `modalidad`) 
+		 VALUES('48','18.881.267-8',  '2', '4', 'C004', '1', '121000', '2017-01-03 16:34:42', 'VESPERTINO'),
+		       ('49','6.719.174-9 ',  '2', '4', 'C004', '1', '121000', '2017-01-04 16:34:42', 'VESPERTINO'),     
+		       ('50','13.550.507-2',  '2', '4', 'C004', '1', '121000', '2017-01-05 16:34:42', 'VESPERTINO'),
+		       ('51','8.808.680-5',  '2', '4', 'C004', '1', '121000', '2017-01-06 16:34:42', 'VESPERTINO'),
+ 		       ('52','9.959.432-2 ', '2', '4', 'C004', '1', '121000', '2017-01-07 16:34:42', 'VESPERTINO'),
+		       ('53','8.322.172-0 ',  '2', '4', 'C004', '1', '121000', '2017-01-08 16:34:42', 'VESPERTINO'),
+		       ('54','22.293.369-2',  '2', '4', 'C004', '1', '121000', '2017-01-09 16:34:42', 'VESPERTINO');
+
+INSERT INTO `matricula`(`id_matricula`, `rut_alumno_fk`, `id_institucion_fk`, `id_carrera_fk`, `cod_ciclo_fk`, `semestre`, `monto`, `fecha_matricula`, `modalidad`) 
+		 VALUES('55','16.495.161-8 ',  '3', '5', 'C005', '1', '121000', '2017-02-03 16:35:42', 'VESPERTINO'),
+		       ('56','4.709.739-8',  '3', '5', 'C005', '1', '121000', '2017-02-04 16:44:42', 'VESPERTINO'),	     
+		       ('57','4.952.141-3',  '3', '5', 'C005', '1', '121000', '2017-02-05 16:34:42', 'VESPERTINO'),
+		       ('58','4.249.149-7 ',  '3', '5', 'C005', '1', '121000', '2017-02-06 16:24:42', 'VESPERTINO'),
+ 		       ('59','1.361.432-6',  '3', '5', 'C005', '1', '121000', '2017-02-07 16:14:42', 'VESPERTINO'),
+		       ('60','19.729.637-2',  '3', '5', 'C005', '1', '121000', '2017-02-08 16:37:42', 'VESPERTINO'),
+		       ('61','3.262.712-9',  '3', '5', 'C005', '1', '121000', '2017-02-09 16:31:42', 'VESPERTINO');
+
+INSERT INTO `matricula`(`id_matricula`, `rut_alumno_fk`, `id_institucion_fk`, `id_carrera_fk`, `cod_ciclo_fk`, `semestre`, `monto`, `fecha_matricula`, `modalidad`) 
+		 VALUES('62','2.816.151-4 ',  '3', '6', 'C006', '1', '141000', '2017-11-03 16:35:42', 'VESPERTINO'),
+		       ('63','13.091.566-3',  '3', '6', 'C006', '1', '141000', '2017-12-04 16:44:42', 'VESPERTINO'),	     
+		       ('64','9.773.427-5',  '3', '6', 'C006', '1', '141000', '2017-23-05 16:34:42', 'VESPERTINO'),
+		       ('65','16.175.780-2',  '3', '6', 'C006', '1', '141000', '2017-14-16 16:24:42', 'VESPERTINO'),
+ 		       ('66','13.671.817-7', '3', '6', 'C006', '1', '141000', '2017-15-27 16:14:42', 'VESPERTINO'),
+		       ('67','16.210.151-K',  '3', '6', 'C006', '1', '141000', '2017-16-18 16:37:42', 'VESPERTINO'),
+		       ('68','10.645.901-0 ', '3', '6', 'C006', '1', '141000', '2017-17-29 16:31:42', 'VESPERTINO');
+
+INSERT INTO `matricula`(`id_matricula`, `rut_alumno_fk`, `id_institucion_fk`, `id_carrera_fk`, `cod_ciclo_fk`, `semestre`, `monto`, `fecha_matricula`, `modalidad`) 
+		 VALUES('69','6.468.525-2',  '4', '7', 'C007', '1', '143000', '2017-18-03 16:35:42', 'VESPERTINO'),
+		       ('70','4.298.961-4 ',   '4', '7', 'C007', '1', '143000', '2017-19-04 16:44:42', 'VESPERTINO'),	     
+		       ('71','2.940.831-9 ',  '4', '7', 'C007', '1', '143000', '2017-20-05 16:34:42', 'VESPERTINO'),
+		       ('72','12.907.679-8', '4', '7', 'C007', '1', '143000', '2017-21-06 16:24:42', 'VESPERTINO'),
+ 		       ('73','12.578.970-6',   '4', '7', 'C007', '1', '143000', '2017-22-07 16:14:42', 'VESPERTINO'),
+		       ('74','13.278.406-K ',  '4', '7', 'C007', '1', '143000', '2017-23-08 16:37:42', 'VESPERTINO'),
+		       ('75','19.317.454-K ',  '4', '7', 'C007', '1', '143000', '2017-24-09 16:31:42', 'VESPERTINO');
+
+INSERT INTO `matricula`(`id_matricula`, `rut_alumno_fk`, `id_institucion_fk`, `id_carrera_fk`, `cod_ciclo_fk`, `semestre`, `monto`, `fecha_matricula`, `modalidad`) 
+		 VALUES('76','15.697.968-6', '4', '8', 'C008', '1', '143000', '2017-11-03 11:35:42', 'VESPERTINO'),
+		       ('77','18.640.098-4',  '4', '8', 'C008', '1', '143000', '2017-16-04 12:44:42', 'VESPERTINO'),	     
+		       ('78','16.656.496-4 ',  '4', '8', 'C008', '1', '143000', '2017-20-05 13:34:42', 'VESPERTINO'),
+		       ('79','16.257.523-6 ',  '4', '8', 'C008', '1', '143000', '2017-21-06 14:24:42', 'VESPERTINO'),
+ 		       ('80','17.667.474-1 ',  '4', '8', 'C008', '1', '143000', '2017-22-08 15:14:42', 'VESPERTINO'),
+		       ('81','6.626.090-9 ',  '4', '8', 'C008', '1', '143000', '2017-23-06 16:37:42', 'VESPERTINO'),
+		       ('82','11.867.433-2 ',  '4', '8', 'C008', '1', '143000', '2017-24-09 17:31:42', 'VESPERTINO');
+
+INSERT INTO `matricula`(`id_matricula`, `rut_alumno_fk`, `id_institucion_fk`, `id_carrera_fk`, `cod_ciclo_fk`, `semestre`, `monto`, `fecha_matricula`, `modalidad`) 
+		 VALUES('83','13.694.898-9', '5', '9', 'C009', '1', '143000', '2017-18-03 19:35:42', 'VESPERTINO'),
+		       ('84','20.900.960-9 ',  '5', '9', 'C009', '1', '143000', '2017-19-04 17:44:42', 'VESPERTINO'),	     
+		       ('85','5.543.101-9 ',  '5', '9', 'C009', '1', '103000', '2017-20-05 17:34:42', 'VESPERTINO'),
+		       ('86','4.280.054-6 ',  '5', '9', 'C009', '1', '103000', '2017-21-06 14:24:42', 'VESPERTINO'),
+ 		       ('87','15.364.425-K ',  '5', '9', 'C009', '1', '103000', '2017-22-07 15:14:42', 'VESPERTINO'),
+		       ('88','15.777.533-2 ',  '5', '9', 'C009', '1', '103000', '2017-23-08 12:37:42', 'VESPERTINO'),
+		       ('89','15.112.714-2',  '5', '9', 'C009', '1', '103000', '2017-24-09 14:31:42', 'VESPERTINO'),
+               ('90', '11.832.400-5 ','5', '9', 'C009', '1', '103000', '2017-21-06 14:24:42', 'VESPERTINO'),
+ 		       ('91','10.928.589-7 ',  '5', '9', 'C009', '1', '103000', '2017-22-07 13:14:42', 'VESPERTINO'),
+		       ('92','8.147.618-7 ',  '5', '9', 'C009', '1', '103000', '2017-23-08 12:37:42', 'VESPERTINO'),
+		       ('93', '2.693.234-3 ', '5', '9', 'C009', '1', '103000', '2017-24-09 11:31:42', 'VESPERTINO');
+
+INSERT INTO `matricula`(`id_matricula`, `rut_alumno_fk`, `id_institucion_fk`, `id_carrera_fk`, `cod_ciclo_fk`, `semestre`, `monto`, `fecha_matricula`, `modalidad`) 
+		 VALUES('94','8.447.220-4 ',  '5', '10', 'C0010', '1', '143000', '2017-08-03 11:35:42', 'VESPERTINO'),
+		       ('95','7.477.429-6 ',  '5', '10', 'C0010', '1', '153000', '2017-09-04 12:44:42', 'VESPERTINO'),	     
+		       ('96','9.008.298-1 ',  '5', '10', 'C0010', '1', '153000', '2017-10-05 13:34:42', 'VESPERTINO'),
+		       ('97','4.575.894-K ',  '5', '10', 'C0010', '1', '153000', '2017-11-06 14:24:42', 'VESPERTINO'),
+ 		       ('98','6.723.828-1 ', '5', '10', 'C0010', '1', '153000', '2017-12-07 15:14:42', 'VESPERTINO'),
+		       ('99','15.618.619-8', '5', '10', 'C0010', '1', '153000', '2017-13-08 16:37:42', 'VESPERTINO');
+
+INSERT INTO `asignatura` (`id_asignatura`, `desc_asignatura`) 
+		VALUES ('1', 'biología_celular'), 
+		       ('2', 'anatomia_humana'), 
+		       ('3', 'histologia_general'), 
+		       ('4', 'formacion_integral'), 
+		       ('5', 'bioetica'), 
+		       ('6', 'historia_general'), 
+		       ('7', 'etica'), 
+		       ('8', 'emprendimiento'), 
+		       ('9', 'matematica_avanzada'), 
+		       ('10', 'estadistica'),
+		       ('11', 'contabilidad'), 
+		       ('12', 'taller_renta'), 
+		       ('13', 'contabilidad_2'), 
+		       ('14', 'documentos_tributarios'), 
+		       ('15', 'taller_gastronomia'), 
+		       ('16', 'conservacion_alimentos'), 
+		       ('17', 'taller_costos_ventas'), 
+		       ('18', 'legislacion_laboral'), 
+		       ('19', 'herramientas_cad'), 
+		       ('20', 'topografia_general'); 
+
+ 
+
+
+
+
+
+
+
+
